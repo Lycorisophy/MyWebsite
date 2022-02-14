@@ -1,7 +1,7 @@
 # MyBlog
 
 #### 项目展示：[https://lysoy.cn](https://lysoy.cn)
-#### remote repository：[https://github.com/Lycorisophy/MyBlog](https://github.com/Lycorisophy/MyBlog)
+#### remote repository：[https://github.com/Lycorisophy/MyWebsite](https://github.com/Lycorisophy/MyWebsite)
 
 #### 本地开发
 git clone项目到本地，修改配置文件[resources/application*.*]中的数据库连接信息，导入SQl/*.SQL文件生成所有表

@@ -1,6 +1,6 @@
 package cn.lysoy.myblog.model;
 
-import cn.lysoy.myblog.constant.CodeEnum;
+import cn.lysoy.myblog.common.constant.CodeEnum;
 
 import java.util.LinkedHashMap;
 

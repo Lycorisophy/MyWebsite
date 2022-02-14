@@ -9,8 +9,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
- * @author: zhangocean
- * @Date: 2018/6/20 19:55
+ * @author: LySoY
+ * @Date: 2022/2/14
  * Describe: 时间工具
  */
 public class TimeUtil {

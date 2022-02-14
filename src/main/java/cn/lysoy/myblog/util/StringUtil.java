@@ -1,9 +1,9 @@
 package cn.lysoy.myblog.util;
 
 /**
- * @author: zhangocean
- * @Date: 2019/11/18 15:42
- * Describe: 字符常量
+ * @author: LySoY
+ * @Date: 2022/2/14
+ * Describe: 字符工具
  */
 public class StringUtil {
 

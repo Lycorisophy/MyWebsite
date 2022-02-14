@@ -3,8 +3,8 @@ package cn.lysoy.myblog.util;
 import cn.lysoy.myblog.model.Result;
 
 /**
- * @author: zhangocean
- * @Date: 2019/5/18 19:13
+ * @author: LySoY
+ * @Date: 2022/2/14
  * Describe: 返回统一格式封装工具
  */
 public class ResultUtil {
