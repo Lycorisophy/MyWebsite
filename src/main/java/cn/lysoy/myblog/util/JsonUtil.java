@@ -1,6 +1,8 @@
 package cn.lysoy.myblog.util;
 
+import cn.lysoy.myblog.entity.User;
 import cn.lysoy.myblog.model.DataMap;
+import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.fastjson.JSON;
 import cn.lysoy.myblog.common.constant.CodeEnum;
 
@@ -87,6 +89,10 @@ public class JsonUtil {
             jsonData.put(DEFAULT_DATA_KEY, dataMap.getData());
         }
         return jsonData;
+    }
+
+    public static String toJson(Object object) {
+        return JSONUtils.toJSONString(object);
     }
 
     public class JsonData extends LinkedHashMap {

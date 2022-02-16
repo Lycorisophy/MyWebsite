@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html  xmlns:th="http://www.thymeleaf.org" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="UTF-8">
 <title>blog</title>
@@ -9,7 +9,7 @@
 <meta property="og:title" content="blog">
 <meta property="og:type" content="website">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel="stylesheet" href="css/site.c57df6.css" type="text/css">
+<link rel="stylesheet" href="../static/css/site.c57df6.css" type="text/css">
 </head>
 <body id="b1">
 <div id="I6DUMKS076OPQ8CJ01C">
@@ -19,31 +19,31 @@
 <div class="v3 ps4 s76 w1">
 <div class="v3 ps68 s5 c79">
 <picture class="i2">
-<source srcset="images/pen2-147.webp 1x, images/pen2-294.webp 2x" type="image/webp" media="(max-width:479px)">
-<source srcset="images/pen2-147.png 1x, images/pen2-294.png 2x" media="(max-width:479px)">
-<source srcset="images/pen2-221.webp 1x, images/pen2-442.webp 2x" type="image/webp" media="(max-width:767px)">
-<source srcset="images/pen2-221.png 1x, images/pen2-442.png 2x" media="(max-width:767px)">
-<source srcset="images/pen2-99.webp 1x, images/pen2-198.webp 2x" type="image/webp" media="(max-width:959px)">
-<source srcset="images/pen2-99.png 1x, images/pen2-198.png 2x" media="(max-width:959px)">
-<source srcset="images/pen2-124.webp 1x, images/pen2-248.webp 2x" type="image/webp" media="(max-width:1199px)">
-<source srcset="images/pen2-124.png 1x, images/pen2-248.png 2x" media="(max-width:1199px)">
-<source srcset="images/pen2-155.webp 1x, images/pen2-310.webp 2x" type="image/webp" media="(min-width:1200px)">
-<source srcset="images/pen2-155.png 1x, images/pen2-310.png 2x" media="(min-width:1200px)">
-<img src="images/pen2-310.png" class="un97 i1">
+<source srcset="../static/images/pen2-147.webp 1x, ../static/images/pen2-294.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="../static/images/pen2-147.png 1x, ../static/images/pen2-294.png 2x" media="(max-width:479px)">
+<source srcset="../static/images/pen2-221.webp 1x, ../static/images/pen2-442.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="../static/images/pen2-221.png 1x, ../static/images/pen2-442.png 2x" media="(max-width:767px)">
+<source srcset="../static/images/pen2-99.webp 1x, ../static/images/pen2-198.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="../static/images/pen2-99.png 1x, ../static/images/pen2-198.png 2x" media="(max-width:959px)">
+<source srcset="../static/images/pen2-124.webp 1x, ../static/images/pen2-248.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="../static/images/pen2-124.png 1x, ../static/images/pen2-248.png 2x" media="(max-width:1199px)">
+<source srcset="../static/images/pen2-155.webp 1x, ../static/images/pen2-310.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="../static/images/pen2-155.png 1x, ../static/images/pen2-310.png 2x" media="(min-width:1200px)">
+<img th:src="@{images/pen2-310.png}" class="un97 i1}">
 </picture>
 </div>
 <div class="v3 ps69 s6 c80"></div>
 <div class="v3 ps70 s7 c81">
-<p class="p1 f1"><a href="index.html">INDEX</a></p>
+<p class="p1 f1"><a href="../index.html">INDEX</a></p>
 </div>
 <div class="v3 ps8 s8 c82">
-<p class="p1 f1"><a href="about.html">ABOUT</a></p>
+<p class="p1 f1"><a href="../about.html">ABOUT</a></p>
 </div>
 <div class="v3 ps9 s9 c83">
-<p class="p2 f1"><a href="blogs.html">BLOG</a></p>
+<p class="p2 f1"><a href="../blogs.html">BLOG</a></p>
 </div>
 <div class="v3 ps10 s10 c84">
-<p class="p2 f1"><a href="manage.html">MANAGE</a></p>
+<p class="p2 f1"><a href="../manage.html">MANAGE</a></p>
 </div>
 <div class="v3 ps71 s77 c85"></div>
 <div class="v3 ps72 s78 c74">
@@ -52,28 +52,28 @@
 </svg>
 </div>
 <div class="v3 ps73 s79 c86">
-<p class="p1 f13">用户名</p>
+    <p> 作者：</p><p class="p1 f13" th:text="${username}"> </p>
 </div>
 <div class="v3 ps74 s80 c87">
 <picture class="i2">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--3.webp 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--6.webp 2x" type="image/webp" media="(max-width:479px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--3.jpg 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--6.jpg 2x" media="(max-width:479px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--5.webp 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10.webp 2x" type="image/webp" media="(max-width:767px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--5.jpg 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10.jpg 2x" media="(max-width:767px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--8.webp 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--16.webp 2x" type="image/webp" media="(max-width:959px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--8.jpg 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--16.jpg 2x" media="(max-width:959px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10-1.webp 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--20.webp 2x" type="image/webp" media="(max-width:1199px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10-1.jpg 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--20.jpg 2x" media="(max-width:1199px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--12.webp 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.webp 2x" type="image/webp" media="(min-width:1200px)">
-<source srcset="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--12.jpg 1x, images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.jpg 2x" media="(min-width:1200px)">
-<img src="images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.jpg" class="un99 i11">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--3.webp 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--6.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--3.jpg 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--6.jpg 2x" media="(max-width:479px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--5.webp 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--5.jpg 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10.jpg 2x" media="(max-width:767px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--8.webp 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--16.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--8.jpg 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--16.jpg 2x" media="(max-width:959px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10-1.webp 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--20.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--10-1.jpg 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--20.jpg 2x" media="(max-width:1199px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--12.webp 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--12.jpg 1x, ../static/images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.jpg 2x" media="(min-width:1200px)">
+<img th:src="@{images/c5z2uqzpamjkma3coxoumgic-gknqaaaabjru5erkjggg--24.jpg}" class="un99 i11}">
 </picture>
 </div>
 <div class="v3 ps75 s81 c88">
 <a href="javascript:;" class="f14 btn3 v4 s82">关注</a>
 </div>
 <div class="v3 ps76 s83 c89">
-<p class="p4 f15">个人简介：</p>
+    <p> 简介：</p><p class="p4 f15" th:text="${brief}"></p>
 </div>
 </div>
 </div>
@@ -85,7 +85,7 @@
 </div>
 <div class="ps78 v2 s85">
 <div class="v3 ps79 s86 c92">
-<p class="p1 f12">正文</p>
+    <p> 正文：</p><p class="p1 f12" th:text="${content}"> </p>
 </div>
 </div>
 </div>
@@ -97,7 +97,7 @@
 </div>
 <div class="v3 ps30 s37 c3">
 <div class="v3 ps31 s38 c17">
-<img src="images/svg_1.svg" class="i8">
+<img th:src="@{images/svg_1.svg}" class="i8}">
 </div>
 <div class="v3 ps32 s39 c95">
 <p class="p1 f7"><a href="about.html" target="_blank" rel="noopener">关于我们</a></p>
@@ -110,17 +110,17 @@
 </div>
 <div class="v3 ps35 s42 c22">
 <picture class="i2">
-<source srcset="images/email-12.webp 1x, images/email-24.webp 2x" type="image/webp" media="(max-width:479px)">
-<source srcset="images/email-12.png 1x, images/email-24.png 2x" media="(max-width:479px)">
-<source srcset="images/email-18.webp 1x, images/email-36.webp 2x" type="image/webp" media="(max-width:767px)">
-<source srcset="images/email-18.png 1x, images/email-36.png 2x" media="(max-width:767px)">
-<source srcset="images/email-28.webp 1x" type="image/webp" media="(max-width:959px)">
-<source srcset="images/email-28.png 1x" media="(max-width:959px)">
-<source srcset="images/email-35.webp 1x" type="image/webp" media="(max-width:1199px)">
-<source srcset="images/email-35.png 1x" media="(max-width:1199px)">
-<source srcset="images/email-43.webp 1x" type="image/webp" media="(min-width:1200px)">
-<source srcset="images/email-43.png 1x" media="(min-width:1200px)">
-<img src="images/email-43.png" class="un100 i9">
+<source srcset="../static/images/email-12.webp 1x, ../static/images/email-24.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="../static/images/email-12.png 1x, ../static/images/email-24.png 2x" media="(max-width:479px)">
+<source srcset="../static/images/email-18.webp 1x, ../static/images/email-36.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="../static/images/email-18.png 1x, ../static/images/email-36.png 2x" media="(max-width:767px)">
+<source srcset="../static/images/email-28.webp 1x" type="image/webp" media="(max-width:959px)">
+<source srcset="../static/images/email-28.png 1x" media="(max-width:959px)">
+<source srcset="../static/images/email-35.webp 1x" type="image/webp" media="(max-width:1199px)">
+<source srcset="../static/images/email-35.png 1x" media="(max-width:1199px)">
+<source srcset="../static/images/email-43.webp 1x" type="image/webp" media="(min-width:1200px)">
+<source srcset="../static/images/email-43.png 1x" media="(min-width:1200px)">
+<img th:src="@{images/email-43.png}" class="un100 i9}">
 </picture>
 </div>
 <div class="v3 ps36 s43 c98">
@@ -144,7 +144,7 @@
 var init_parallax;!function(){var t,e,i,r,o,s=["sticky","-webkit-sticky","-moz-sticky","-o-sticky","-ms-sticky"],l=0,n=!1,a=!1,f=void 0,d=void 0,p=1;init_parallax=function(){t=document.querySelectorAll(".plx")};var h=function(t){var l=window;if(null==t.bounds||e!=r||i!=o){var n=t.parentNode;void 0===t.currentTime&&(t.style.position="absolute"),null!=n.getAttribute("data-plx-c")&&(n=n.parentNode);var a=0,f=0,d=n.offsetWidth,p=n.offsetHeight,h=n;do{var m=-1!=s.indexOf(l.getComputedStyle(h).position);m&&(h.style.position="relative"),a+=h.offsetTop,f+=h.offsetLeft,m&&(h.style.position="sticky")}while(h=h.offsetParent);void 0===t.bounds&&"0px"===l.getComputedStyle(document.body).getPropertyValue("min-width")||(t.bounds={top:a,left:f,width:d,height:p})}else 0!=t.bounds.width&&0!=t.bounds.height||(t.bounds.width=t.offsetWidth,t.bounds.height=t.offsetHeight);return t.bounds},m=function(t,e){var i=t.getBoundingClientRect();d||(i={left:i.left,right:i.right,top:i.top,bottom:i.bottom},f||(i.top=(i.top+u.pageYOffset)*p-u.pageYOffset,i.bottom=(i.bottom+u.pageYOffset)*p-u.pageYOffset));for(var r=0;0!==e&&r<t.children.length;r++){var o=e?m(t.children[r],e):t.children[r].getBoundingClientRect();e||d||(o={left:o.left,right:o.right,top:o.top,bottom:o.bottom},f||(o.top=(o.top+u.pageYOffset)*p-u.pageYOffset,o.bottom=(o.bottom+u.pageYOffset)*p-u.pageYOffset)),o.left<i.left&&(i.left=o.left),o.top<i.top&&(i.top=o.top),o.right>i.right&&(i.right=o.right),o.bottom>i.bottom&&(i.bottom=o.bottom)}return i.width=i.right-i.left,i.height=i.bottom-i.top,i},g=function(t,e,i,r,s){var l=window.pageYOffset/p;l<0&&(l=0);var n=t.top;1==e?n+=t.height/2:2==e&&(n+=t.height);var a=(n-l)/o,f=0,d=0,h=r>=0?r:0,m=o*(i-h),g=o*i,y=o*h;return n<o?a<=i&&(a>=r||r<=0)?s?(d=f=m-l,n>g?d=f+=n-g:n-y&&(d=m-l*m/(n-y))):(d=f=l,n>g?d=f-=n-g:n-y&&(d=f*m/(n-y))):a<=i?n>y&&(s?n<g&&(f=g-n):(d=f=m,n<g&&(f=n-y))):s&&n>g&&(d=f=m):(a<=i&&(a>=r||r<=0)?f=s?n-l-y:g-(n-l):a<=i?s||(f=m):s&&(f=m),d=f),{o:f,n:d}},y=function(){void 0===f&&(f=/chrome/i.test(navigator.userAgent),d=/firefox/i.test(navigator.userAgent));var s=window;r=s.innerWidth,o=s.innerHeight,d||e==r&&i==o||(p=parseFloat(s.getComputedStyle(document.body).getPropertyValue("zoom"))),p||(p=1),r/=p,o/=p,l=l?document.body.scrollWidth:1;var u=Math.max(l,r),c=s.pageXOffset;if(c<0)n=a=!1;else{for(var x=t.length-1;x>=0;x--){var v,b=t[x],w=b.nc?b.parentNode:b.parentNode.parentNode;if(null!=w&&"hidden"!=(v=s.getComputedStyle(w)).getPropertyValue("visibility")&&"none"!=v.getPropertyValue("display")){var T=h(b);if(null!=T){if(null==b.plx){if(b.style.display="block",b.plx=b.getAttribute("data-plx").split(";"),b.bb=null!=b.getAttribute("data-plx-bb"),b.nc=null!=b.getAttribute("data-plx-no-clip"),b.offsl=b.offst=b.incw=b.inch=0,!b.nc){var F=w.getAttribute("data-plx-offs");null!=F&&(F=F.split(";"),b.offsl=1.4142*parseInt(F[0]),b.offst=1.4142*parseInt(F[1]),b.incw=Math.max(0,-b.offsl)+1.4142*parseInt(F[2]),b.inch=Math.max(0,-b.offst)+1.4142*parseInt(F[3]))}var k=v.getPropertyValue("transform")||v.getPropertyValue("-webkit-transform")||v.getPropertyValue("-moz-transform")||v.getPropertyValue("-ms-transform"),O=1,I=1;if("none"!=k)k=k.substring(7).split(","),O=parseFloat(k[0])>=0?1:-1,I=(V=parseFloat(k[3]))>=0?1:-1;b.sx=O,b.sy=I,b.style.display="inline-block"}for(var A=void 0,z=void 0,L=void 0,M=void 0,P=void 0,Y=void 0,E=void 0,N=b.plx.length-1;N>=0;N--){Array.isArray(b.plx[N])||(b.plx[N]=b.plx[N].split(":"),b.plx[N][1]=parseFloat(b.plx[N][1]),b.plx[N][2]=parseFloat(b.plx[N][2]),b.plx[N][3]=parseInt(b.plx[N][3]),b.plx[N][4]=parseInt(b.plx[N][4]));var V,C=(V=b.plx[N])[1],q=V[2],S=V[3],W=V[4],H=o*(q-(C>=0?C:0)),R=g(T,S,q,C,W);if(void 0!==b.currentTime){if(b.videoWidth){E=R.o;W&&(E=-E);var _=E<0?0:E*V[5]/1e3;if(d){b.playbackRate=0;var B=b.play();void 0!==B&&B.then(function(t){return function(){t.currentTime=_,t.pause()}}(b)).catch(function(t){})}else b.currentTime=_}else setTimeout(y,50);break}if("LOTTIE-PLAYER"===b.tagName){if(void 0!==b.seek){var X=R.o/H*V[5]*100;X<0?X=0:X>100&&(X=S?X%100:100),X=parseInt(X)+"%",b.seek(X)}break}_=R.n/H;if("v"==V[0]){var j=(0==W?-1:1)*(V[5]-1);z=R.o*j,null==A&&(A=0)}else if("h"==V[0]){if("ll"==V[5])A=-(T.left+T.width);else if("lc"==V[5])A=-(T.left+T.width)*(1-_);else if("lr"==V[5])A=-(T.left+T.width)*(1-_)+(u-T.left)*_;else if("cl"==V[5])A=-(T.left+T.width)*_;else if("cc"==V[5])A=0;else if("cr"==V[5])A=(u-T.left)*_;else if("rl"==V[5])A=-(T.left+T.width)*_+(u-T.left)*(1-_);else if("rc"==V[5])A=(u-T.left)*(1-_);else if("rr"==V[5])A=u-T.left;else{j=V[5];A=R.o*j}null==z&&(z=0)}else"s"==V[0]?(L=1-_+_*V[5])<0&&(L=0):"r"==V[0]?(M=_*V[5],P=V[6]+" "+V[7]):"b"==V[0]?(Y=_*V[5])<0&&(Y=0):"o"==V[0]&&((E=1-_+_*V[5]/100)<0?E=0:E>1&&(E=1))}if(void 0===b.currentTime&&"LOTTIE-PLAYER"!==b.tagName){var D=b.nc?void 0:b.parentNode;D&&(D.style.webkitTransform=D.style.MozTransform=D.style.msTransform=D.style.transform="none",b.style.marginLeft=b.style.marginTop=0);var G="",J="";null!=A&&(G="translate3d("+A.toFixed(1)+"px,"+z.toFixed(1)+"px,0)",(b.sx<0||b.sy<0)&&(J="translate3d("+(A*b.sx).toFixed(1)+"px,"+(z*b.sy).toFixed(1)+"px,0)"));var K="";if(null!=L&&(K+="scale("+L.toFixed(3)+","+L.toFixed(3)+")"),null!=M&&(K.length&&(K+=" "),K+="rotate("+M.toFixed(1)+"deg)",b.style.webkitTransformOrigin=b.style.MozTransformOrigin=b.style.msTransformOrigin=b.style.transformOrigin=P),G.length&&(G+=" "),G+=K,J.length&&(J+=" ",J+=K),G.length&&(b.style.webkitTransform=b.style.MozTransform=b.style.msTransform=b.style.transform=G),null!=Y&&(b.style.webkitFilter=b.style.mozFilter="blur("+Y.toFixed(1)+"px)"),null!=E&&(b.style.opacity=E.toFixed(2),b.style.filter="alpha(opacity="+parseInt(100*E)+")"),D){var Q=m(D.parentNode,0);parseInt(10*parseFloat(b.style.width))!=parseInt(10*Q.width)&&(b.style.width=Q.width.toFixed(1)+"px"),parseInt(10*parseFloat(b.style.height))!=parseInt(10*Q.height)&&(b.style.height=Q.height.toFixed(1)+"px");var U,Z=m(b,b.bb);J.length?(b.style.webkitTransform=b.style.MozTransform=b.style.msTransform=b.style.transform=J,U=m(b,b.bb)):U={left:Z.left,top:Z.top,width:Z.width,height:Z.height};var $=(Z.width-Q.width)/2-b.offsl,tt=(Z.height-Q.height)/2-b.offst;if(Z.left+=b.offsl,Z.top+=b.offst,U.left+=b.offsl,U.top+=b.offst,Z.width+=b.incw,Z.height+=b.inch,U.width+=b.incw,U.height+=b.inch,U.top+U.height<0||U.top>s.innerHeight||U.left+U.width<0||U.left>u){D.style.width=0;continue}var et=U.left+c,it=et+U.width>u?u-et:U.width,rt=b.sx<0?Z.width-it:0;(b.style.transform||b.style.webkitTransform||b.style.MozTransform||b.style.msTransform)!=K&&(b.style.webkitTransform=b.style.MozTransform=b.style.msTransform=b.style.transform=K),"50% 50%"!=(b.style.transformOrigin||b.style.webkitTransformOrigin||b.style.MozTransformOrigin||b.style.msTransformOrigin)&&(b.style.webkitTransformOrigin=b.style.MozTransformOrigin=b.style.msTransformOrigin=b.style.transformOrigin="50% 50%"),$=($+rt).toFixed(1)+"px",b.style.marginLeft!=$&&(b.style.marginLeft=$),tt=tt.toFixed(1)+"px",b.style.marginTop!=tt&&(b.style.marginTop=tt),parseInt(10*parseFloat(D.style.width))!=parseInt(10*it)&&(D.style.width=it.toFixed(1)+"px"),parseInt(10*parseFloat(D.style.height))!=parseInt(10*Z.height)&&(D.style.height=Z.height.toFixed(1)+"px"),D.style.webkitTransform=D.style.MozTransform=D.style.msTransform=D.style.transform="translate3d("+(Z.left-Q.left-rt).toFixed(1)+"px,"+(Z.top-Q.top).toFixed(1)+"px,0)"}b.style.visibility=""}}}}e=s.innerWidth,i=s.innerHeight,n||"0px"===s.getComputedStyle(document.body).getPropertyValue("min-width")?(n=!1,a=s.requestAnimationFrame?s.requestAnimationFrame(y):y()):a=!1}},u=window;if(u.requestAnimationFrame){a=u.requestAnimationFrame(y);var c=function(){0==n&&(n=!0,0==a&&(a=window.requestAnimationFrame(y)))};u.addEventListener("scroll",c),u.addEventListener("resize",c)}else u.addEventListener?(u.addEventListener("scroll",y),u.addEventListener("resize",y)):(u.onscroll=y,u.onresize=y);if(init_parallax(),y(),"matchMedia"in window)try{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(t){y()})}catch(t){}}();
 
 </script>
-<script type="text/javascript" src="js/jquery.43b667.js"></script>
-<script type="text/javascript" src="js/blog.c57df6.js"></script>
+<script type="text/javascript" th:src="@{js/jquery.43b667.js}"></script>
+<script type="text/javascript" th:src="@{js/blog.c57df6.js}"></script>
 </body>
 </html>

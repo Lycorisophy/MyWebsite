@@ -1,7 +1,6 @@
 package cn.lysoy.myblog.util;
 
 import cn.lysoy.myblog.model.Markdown;
-import com.google.common.base.Joiner;
 
 import com.vladsch.flexmark.ext.tables.TablesExtension;
 import com.vladsch.flexmark.html.HtmlRenderer;
@@ -92,44 +91,6 @@ public class MarkdownUtil {
         }
     }
 
-
-    /**
-     * 将本地的markdown文件，转为html文档输出
-     *
-     * @param path 相对地址or绝对地址 ("/" 开头)
-     * @return
-     * @throws IOException
-     */
-    public static Markdown ofFile(String path) throws IOException {
-        return ofStream(FileUtil.getStreamByFileName(path));
-    }
-
-
-    /**
-     * 将网络的markdown文件，转为html文档输出
-     *
-     * @param url http开头的url格式
-     * @return
-     * @throws IOException
-     */
-    public static Markdown ofUrl(String url) throws IOException {
-        return ofStream(FileUtil.getStreamByFileName(url));
-    }
-
-
-    /**
-     * 将流转为html文档输出
-     *
-     * @param stream
-     * @return
-     */
-    public static Markdown ofStream(InputStream stream) {
-        BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(stream, Charset.forName("UTF-8")));
-        List<String> lines = bufferedReader.lines().collect(Collectors.toList());
-        String content = Joiner.on("\n").join(lines);
-        return ofContent(content);
-    }
 
 
     /**

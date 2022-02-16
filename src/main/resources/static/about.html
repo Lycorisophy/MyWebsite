@@ -9,10 +9,10 @@
 <meta property="og:title" content="About">
 <meta property="og:type" content="website">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel="stylesheet" href="css/site.c57df6.css" type="text/css">
+<link rel="stylesheet" href="css/site.46df63.css" type="text/css">
 </head>
 <body id="b1">
-<div id="I6DUMKS076OPQ8CJ01C">
+<div id="Y4FWC369SGE36X8B9E">
 </div>
 <div class="ps2 v2 s44">
 <div class="v3 ps37 s4 c3">
@@ -47,144 +47,146 @@
 </div>
 </div>
 </div>
-    <div>
-        <h1>MyBlog</h1>
-        <h4>项目展示：<a href="https://lysoy.cn">https://lysoy.cn</a></h4>
-        <h4>remote repository：<a href="https://github.com/Lycorisophy/MyBlog">https://github.com/Lycorisophy/MyBlog</a></h4>
-        <h4>本地开发</h4>
-        <p>git clone项目到本地，修改配置文件[resources/application*.*]中的数据库连接信息，导入SQl/*.SQL文件生成所有表</p>
-        <h4>安装部署</h4>
-        <p>可以使用docker方式部署，也可支持-jar方式，服务器可以用阿里云</p>
-        <h2>项目设计</h2>
-        <h3>功能需求</h3>
-        <h5>主页</h5>
-        <ul>
-            <li>
-                <p>博客汇总，以列表形式展示文章，并附上文章作者、发布日期、分类情况以及文章简要</p>
-            </li>
-            <li>
-                <p>点击文章标题进入文章详情页</p>
-            </li>
-            <li>
-                <p>能够以分类形式查看文章</p>
-            </li>
-            <li>
-                <p>个人介绍、联系方式</p>
-            </li>
-            <li>
-                <p>置顶文章</p>
-            </li>
-        </ul>
-        <h5>后台管理</h5>
-        <ul>
-            <li>
-                <p>发布文章（用户权限1） 1.使用markdown编辑器，支持插入代码，插入图片等功能</p>
-            </li>
-            <li>
-                <p>修改文章（用户权限2） 1.分页展示文章信息 2.改变文章基本信息 3.可对文章进行编辑 4.可以删除文章</p>
-            </li>
-            <li>
-                <p>用户管理（用户权限3） 1.可以添加权限1-3用户 2.可以删除权限1-2用户 3.可以修改权限1-2用户信息 4.可以修改用户自身信息</p>
-            </li>
-        </ul>
-        <h3>页面设计</h3>
-        <h5>首页</h5>
-        <p><img src="" alt="" /> <br></p>
-        <h5>文章编辑</h5>
-        <p><img src="" alt="" /> <br></p>
-        <h5>后台管理</h5>
-        <p><img src="" alt="" /> <br></p>
-        <h5>个人中心</h5>
-        <p><img src="" alt="" /></p>
-        <h3>总体设计</h3>
-        <ul>
-            <li>
-                <p><strong>本项目用到的技术和框架</strong><br> 1.项目构建：Maven<br> 2.web框架：Springboot<br> 3.数据库ORM：Mybatis<br> 4.数据库连接池： Druid<br> 5.分页插件：PageHelper<br> 6.数据库：MySql<br> 7.缓存：Redis<br> 8.前端模板：Thymeleaf<br></p>
-            </li>
-            <li>
-                <p><strong>环境</strong></p>
-            </li>
-        </ul>
-        <table>
-            <thead>
-            <tr><th>工具</th><th>名称</th></tr>
-            </thead>
-            <tbody>
-            <tr><td>开发工具</td><td>IDEA</td></tr>
-            <tr><td>语言</td><td>JDK11</td></tr>
-            <tr><td>前端</td><td>Sparkle软件</td></tr>
-            <tr><td>数据库</td><td>Mysql8.0.26</td></tr>
-            <tr><td>项目框架</td><td>SSM</td></tr>
-            <tr><td>ORM</td><td>Mybatis</td></tr>
-            <tr><td>安全框架</td><td>SpringSecurity</td></tr>
-            <tr><td>缓存</td><td>Redis</td></tr>
-            <tr><td>项目构建</td><td>Maven</td></tr>
-            <tr><td>运行环境</td><td>阿里云</td></tr>
-            </tbody>
-        </table>
-        <h3>结构设计</h3>
-        <p><img src="" alt="" /></p>
-        <h3>业务设计</h3>
-        <h4>发布文章流程</h4>
-        <p><img src="" alt="" /></p>
-        <h4>修改文章流程</h4>
-        <p><img src="" alt="" /></p>
-        <h4>登录流程</h4>
-        <p><img src="" alt="" /></p>
-        <h4>添加用户</h4>
-        <p><img src="" alt="" /></p>
-        <h3>数据库设计</h3>
-        <h4>数据字典</h4>
-        <h6>用户表：user</h6>
-        <table>
-            <thead>
-            <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
-            </thead>
-            <tbody>
-            <tr><td>id</td><td>bigint unsigned</td><td>11</td><td>true</td><td>true</td><td>主键，自增，步长为 1</td></tr>
-            <tr><td>username</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>用户名,唯一</td></tr>
-            <tr><td>password</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>密码</td></tr>
-            <tr><td>role</td><td>int</td><td> </td><td>false</td><td>true</td><td>用户权限</td></tr>
-            <tr><td>brief</td><td>varchar</td><td>255</td><td>false</td><td>false</td><td>个人简介</td></tr>
-            <tr><td>last_login_time</td><td>datatime</td><td>8bytes</td><td>false</td><td>false</td><td>最近登录时间</td></tr>
-            <tr><td>create_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>创建时间</td></tr>
-            <tr><td>update_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>数据更新时间</td></tr>
-            </tbody>
-        </table>
-        <h6>文章表：article</h6>
-        <table>
-            <thead>
-            <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
-            </thead>
-            <tbody>
-            <tr><td>id</td><td>bigint unsigned</td><td>11</td><td>true</td><td>true</td><td>主键，自增，步长为 1</td></tr>
-            <tr><td>author_id</td><td>bigint unsigned</td><td>11</td><td>false</td><td>true</td><td>作者</td></tr>
-            <tr><td>title</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章标题,唯一</td></tr>
-            <tr><td>brief</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章摘要</td></tr>
-            <tr><td>tag</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>文章标签</td></tr>
-            <tr><td>content</td><td>longtext</td><td>0</td><td>false</td><td>true</td><td>文章内容</td></tr>
-            <tr><td>editor_id</td><td>bigint unsigned</td><td>false</td><td>false</td><td>true</td><td>上一次编辑者</td></tr>
-            <tr><td>create_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>创建时间</td></tr>
-            <tr><td>update_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>数据更新时间</td></tr>
-            </tbody>
-        </table>
-    </div>
-<div class="v3 ps38 s35 c41">
+<div class="v3 ps39 s46 c43">
+<div class="p1 f7">
+    <h1>MyBlog</h1>
+    <h4>项目展示：<a href="https://lysoy.cn">https://lysoy.cn</a></h4>
+    <h4>remote repository：<a href="https://github.com/Lycorisophy/MyWebsite">https://github.com/Lycorisophy/MyWebsite</a></h4>
+    <h4>本地开发</h4>
+    <p>git clone项目到本地，修改配置文件[resources/application*.*]中的数据库连接信息，导入SQl/*.SQL文件生成所有表</p>
+    <h4>安装部署</h4>
+    <p>可以使用docker方式部署，也可支持-jar方式，服务器可以用阿里云</p>
+    <h2>项目设计</h2>
+    <h3>功能需求</h3>
+    <h5>主页</h5>
+    <ul>
+        <li>
+            <p>博客汇总，以列表形式展示文章，并附上文章作者、发布日期、分类情况以及文章简要</p>
+        </li>
+        <li>
+            <p>点击文章标题进入文章详情页</p>
+        </li>
+        <li>
+            <p>能够以分类形式查看文章</p>
+        </li>
+        <li>
+            <p>个人介绍、联系方式</p>
+        </li>
+        <li>
+            <p>置顶文章</p>
+        </li>
+    </ul>
+    <h5>后台管理</h5>
+    <ul>
+        <li>
+            <p>发布文章（用户权限1） 1.使用markdown编辑器，支持插入代码，插入图片等功能</p>
+        </li>
+        <li>
+            <p>修改文章（用户权限2） 1.分页展示文章信息 2.改变文章基本信息 3.可对文章进行编辑 4.可以删除文章</p>
+        </li>
+        <li>
+            <p>用户管理（用户权限3） 1.可以添加权限1-3用户 2.可以删除权限1-2用户 3.可以修改权限1-2用户信息 4.可以修改用户自身信息</p>
+        </li>
+    </ul>
+    <h3>页面设计</h3>
+    <h5>首页</h5>
+    <p><img src="" alt="" /> <br></p>
+    <h5>文章编辑</h5>
+    <p><img src="" alt="" /> <br></p>
+    <h5>后台管理</h5>
+    <p><img src="" alt="" /> <br></p>
+    <h5>个人中心</h5>
+    <p><img src="" alt="" /></p>
+    <h3>总体设计</h3>
+    <ul>
+        <li>
+            <p><strong>本项目用到的技术和框架</strong><br> 1.项目构建：Maven<br> 2.web框架：Springboot<br> 3.数据库ORM：Mybatis<br> 4.数据库连接池： Druid<br> 5.分页插件：PageHelper<br> 6.数据库：MySql<br> 7.缓存：Redis<br> 8.前端模板：Thymeleaf<br></p>
+        </li>
+        <li>
+            <p><strong>环境</strong></p>
+        </li>
+    </ul>
+    <table>
+        <thead>
+        <tr><th>工具</th><th>名称</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>开发工具</td><td>IDEA</td></tr>
+        <tr><td>语言</td><td>JDK11</td></tr>
+        <tr><td>前端</td><td>Sparkle软件</td></tr>
+        <tr><td>数据库</td><td>Mysql8.0.26</td></tr>
+        <tr><td>项目框架</td><td>SSM</td></tr>
+        <tr><td>ORM</td><td>Mybatis</td></tr>
+        <tr><td>安全框架</td><td>SpringSecurity</td></tr>
+        <tr><td>缓存</td><td>Redis</td></tr>
+        <tr><td>项目构建</td><td>Maven</td></tr>
+        <tr><td>运行环境</td><td>阿里云</td></tr>
+        </tbody>
+    </table>
+    <h3>结构设计</h3>
+    <p><img src="" alt="" /></p>
+    <h3>业务设计</h3>
+    <h4>发布文章流程</h4>
+    <p><img src="" alt="" /></p>
+    <h4>修改文章流程</h4>
+    <p><img src="" alt="" /></p>
+    <h4>登录流程</h4>
+    <p><img src="" alt="" /></p>
+    <h4>添加用户</h4>
+    <p><img src="" alt="" /></p>
+    <h3>数据库设计</h3>
+    <h4>数据字典</h4>
+    <h6>用户表：user</h6>
+    <table>
+        <thead>
+        <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>id</td><td>bigint unsigned</td><td>11</td><td>true</td><td>true</td><td>主键，自增，步长为 1</td></tr>
+        <tr><td>username</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>用户名,唯一</td></tr>
+        <tr><td>password</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>密码</td></tr>
+        <tr><td>role</td><td>int</td><td> </td><td>false</td><td>true</td><td>用户权限</td></tr>
+        <tr><td>brief</td><td>varchar</td><td>255</td><td>false</td><td>false</td><td>个人简介</td></tr>
+        <tr><td>last_login_time</td><td>datatime</td><td>8bytes</td><td>false</td><td>false</td><td>最近登录时间</td></tr>
+        <tr><td>create_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>创建时间</td></tr>
+        <tr><td>update_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>数据更新时间</td></tr>
+        </tbody>
+    </table>
+    <h6>文章表：article</h6>
+    <table>
+        <thead>
+        <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>id</td><td>bigint unsigned</td><td>11</td><td>true</td><td>true</td><td>主键，自增，步长为 1</td></tr>
+        <tr><td>author_id</td><td>bigint unsigned</td><td>11</td><td>false</td><td>true</td><td>作者</td></tr>
+        <tr><td>title</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章标题,唯一</td></tr>
+        <tr><td>brief</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章摘要</td></tr>
+        <tr><td>tag</td><td>varchar</td><td>64</td><td>false</td><td>true</td><td>文章标签</td></tr>
+        <tr><td>content</td><td>longtext</td><td>0</td><td>false</td><td>true</td><td>文章内容</td></tr>
+        <tr><td>editor_id</td><td>bigint unsigned</td><td>false</td><td>false</td><td>true</td><td>上一次编辑者</td></tr>
+        <tr><td>create_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>创建时间</td></tr>
+        <tr><td>update_time</td><td>datetime</td><td>8bytes</td><td>false</td><td>true</td><td>数据更新时间</td></tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="v3 ps40 s35 c43">
 <div class="plx" data-plx="v:0.25:0.75:0:0:2.00" style="visibility:hidden;transform-style:preserve-3d;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden;width:100%;height:100%" data-plx-no-clip="1">
-<div class="v3 ps4 s35 c42">
-<div class="c43 s36">
+<div class="v3 ps4 s35 c44">
+<div class="c45 s36">
 </div>
 <div class="v3 ps30 s37 c3">
 <div class="v3 ps31 s38 c18">
 <img src="images/svg_1.svg" class="i8">
 </div>
-<div class="v3 ps32 s39 c44">
+<div class="v3 ps32 s39 c46">
 <p class="p1 f7"><a href="#" target="_blank" rel="noopener">关于我们</a></p>
 </div>
-<div class="v3 ps33 s40 c45">
+<div class="v3 ps33 s40 c47">
 <p class="p1 f7"><a>广告服务</a></p>
 </div>
-<div class="v3 ps34 s41 c46">
+<div class="v3 ps34 s41 c48">
 <p class="p1 f7"><a href="https://github.com/Lycorisophy" target="_blank" rel="noopener">Github</a></p>
 </div>
 <div class="v3 ps35 s42 c4">
@@ -202,7 +204,7 @@
 <img src="images/email-43.png" class="un63 i9">
 </picture>
 </div>
-<div class="v3 ps36 s43 c47">
+<div class="v3 ps36 s43 c49">
 <p class="p1 f7">s2295938761@163.com</p>
 </div>
 </div>
@@ -216,7 +218,7 @@
 
 <script>dpth="/"</script>
 <script>
-!function(){var e=function(){var e,t=[70,87,87,88,52,88,52,89,72,71,57,82,79,90,80,84,86,54,71,68,90,87],l="";for(e=0;e<t.length;e++)l+=String.fromCharCode(t[e]);var o,n=document.getElementById(l);if(null==n||"block"!=n.style.display||"absolute"!=n.style.position||"visible"!=n.style.visibility||1!=n.style.opacity||2147483647!=n.style.zIndex||"100%"!=n.style.width||"0px"!=n.style.top||"rgb(255, 255, 255)"!=n.style.color||"rgb(0, 0, 0)"!=n.style.backgroundColor||1!=n.style.lineHeight||parseInt((o=window.getComputedStyle(n)).getPropertyValue("height"))<14||parseInt(o.getPropertyValue("font-size"))<14){null!=n&&n.parentNode.removeChild(n),(n=document.createElement("DIV")).id=l,n.style.display="block",n.style.position="absolute",n.style.visibility="visible",n.style.opacity=1,n.style.width="100%",n.style.zIndex=2147483647,n.style.top="0px",n.style.color="#fff",n.style.backgroundColor="#000",n.style.lineHeight=1,n.onclick=function(e){e.preventDefault();var t=window.open("https://sparkleapp.com","_blank");t&&t.focus()};var i=[20351,38,35,56,50,48,51,59,29992,32,83,112,38,35,56,50,48,51,59,97,114,107,108,38,35,56,50,48,51,59,101,32,21046,38,35,56,50,48,51,59,20316],r="";for(e=0;e<i.length;e++)r+=String.fromCharCode(i[e]);n.innerHTML=r;var s=document.body.children;document.body.insertBefore(n,s[Math.round(Math.random()*s.length+1)-1])}};e(),setInterval(e,5e3)}();
+!function(){var e=function(){var e,t=[65,75,49,57,56,76,86,52,67,49,49,72,77,74,78,83,85,56,77,49,83,56],l="";for(e=0;e<t.length;e++)l+=String.fromCharCode(t[e]);var o,n=document.getElementById(l);if(null==n||"block"!=n.style.display||"absolute"!=n.style.position||"visible"!=n.style.visibility||1!=n.style.opacity||2147483647!=n.style.zIndex||"100%"!=n.style.width||"0px"!=n.style.top||"rgb(255, 255, 255)"!=n.style.color||"rgb(0, 0, 0)"!=n.style.backgroundColor||1!=n.style.lineHeight||parseInt((o=window.getComputedStyle(n)).getPropertyValue("height"))<14||parseInt(o.getPropertyValue("font-size"))<14){null!=n&&n.parentNode.removeChild(n),(n=document.createElement("DIV")).id=l,n.style.display="block",n.style.position="absolute",n.style.visibility="visible",n.style.opacity=1,n.style.width="100%",n.style.zIndex=2147483647,n.style.top="0px",n.style.color="#fff",n.style.backgroundColor="#000",n.style.lineHeight=1,n.onclick=function(e){e.preventDefault();var t=window.open("https://sparkleapp.com","_blank");t&&t.focus()};var i=[38,35,56,50,48,51,59,20351,29992,32,38,35,56,50,48,51,59,83,38,35,56,50,48,51,59,112,97,114,107,108,38,35,56,50,48,51,59,101,38,35,56,50,48,51,59,32,21046,20316],r="";for(e=0;e<i.length;e++)r+=String.fromCharCode(i[e]);n.innerHTML=r;var s=document.body.children;document.body.insertBefore(n,s[Math.round(Math.random()*s.length+1)-1])}};e(),setInterval(e,5e3)}();
 
 </script>
 <script>
@@ -224,6 +226,6 @@ var init_parallax;!function(){var t,e,i,r,o,s=["sticky","-webkit-sticky","-moz-s
 
 </script>
 <script type="text/javascript" src="js/jquery.43b667.js"></script>
-<script type="text/javascript" src="js/about.c57df6.js"></script>
+<script type="text/javascript" src="js/about.46df63.js"></script>
 </body>
 </html>

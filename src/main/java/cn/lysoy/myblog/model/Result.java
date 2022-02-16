@@ -16,6 +16,12 @@ public class Result<T> {
     private Integer code;
 
     /**
+     * true 成功
+     * false 失败
+     */
+    private boolean success;
+
+    /**
      * 提示信息
      */
     private String msg;
@@ -24,9 +30,4 @@ public class Result<T> {
      * 具体内容
      */
     private  T data;
-
-    /**
-     * 创建时间
-     */
-    private static final long time = System.currentTimeMillis();
 }
